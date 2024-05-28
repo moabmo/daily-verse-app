@@ -1,0 +1,74 @@
+/* src/App.css */
+.App {
+  text-align: center;
+  background-color: #f0f0f5; /* Light background color for elegance */
+  font-family: 'Comfortaa', sans-serif;
+}
+
+header {
+  padding: 20px;
+}
+
+.daily-verse {
+  background-color: #ffffff; /* White background for the verse card */
+  border: 2px solid #ffc107; /* Gold border */
+  padding: 30px;
+  border-radius: 10px;
+  margin: 20px auto;
+  width: 60%;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for elegance */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.daily-verse:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Hover effect */
+}
+
+.daily-verse h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #003366; /* Navy blue for headings */
+}
+
+.date-time {
+  font-size: 1.2em;
+  color: #666; /* Medium gray for date and time */
+  margin-bottom: 20px;
+}
+
+.verse-text {
+  font-size: 1.5em; /* Increased font size for verse */
+  color: #222; /* Darker gray for verse text */
+  margin: 20px 0;
+  position: relative;
+}
+
+.verse-text::before, .verse-text::after {
+  content: '"';
+  font-size: 1.5em;
+  color: #ffc107; /* Gold for quotation marks */
+  position: absolute;
+}
+
+.verse-text::before {
+  left: -10px;
+  top: -10px;
+}
+
+.verse-text::after {
+  right: -10px;
+  bottom: -10px;
+}
+
+.verse-reference {
+  font-size: 1.3em;
+  color: #003366; /* Navy blue for reference */
+  margin-top: 10px;
+}
+
+.footer {
+  margin-top: 40px;
+  font-size: 1em;
+  color: #666; /* Medium gray for footer text */
+}
